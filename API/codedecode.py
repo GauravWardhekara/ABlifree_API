@@ -88,7 +88,7 @@ class CodeDecode:
         return data
 
     def code(self, x):
-        self.driver.find_element(By.ID, 'txtEncryptedText').clear()
+        self.driver.find_element(By.ID, 'txtOriginalText').clear()
         self.driver.find_element(By.ID, 'txtOriginalText').send_keys(x)
         self.driver.find_element(By.ID, 'btnEncrypt').click()
         data = self.driver.find_element(By.ID, 'lblEncryptedText').get_attribute('value')

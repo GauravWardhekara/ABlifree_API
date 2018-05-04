@@ -48,3 +48,4 @@ post_delete_conversation = "/Chat/deleteConversation"
 get_conversations_list = "/Chat/getconversationlist"
 post_send_message = "/Chat/sendMessage"
 get_predefined_tags = "/Chat/getpredefinedtags"
+post_login = '/Account/Login_v2'

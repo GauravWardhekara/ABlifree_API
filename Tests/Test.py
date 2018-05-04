@@ -1,6 +1,5 @@
 from API.apicalls import Requests
 from API.parser import Parser
-from API.tags import Tags
 
 
 # import API.data
@@ -8,7 +7,8 @@ from API.tags import Tags
 
 
 def main():
-    print(Tags('20'))
+    call = Requests()
+    print(call.post_login(user='jay@mailinator.com', password='123456').text)
 
 
 if __name__ == '__main__':

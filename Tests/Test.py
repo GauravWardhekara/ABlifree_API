@@ -1,4 +1,4 @@
-from API import requests
+from API.apicalls import Requests
 from API.parser import Parser
 
 
@@ -7,9 +7,8 @@ from API.parser import Parser
 
 
 def main():
-    for i in range(20):
-        response = requests.post_add_business_bit()
-        print(response)
+    call = Requests()
+    print(call.get_dashboard().text)
 
 
 if __name__ == '__main__':
